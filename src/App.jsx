@@ -30,10 +30,6 @@ let passwordGenerator = useCallback(()=>{
      //use ref hook
      let passwordRef = useRef(null)
       
-     const copyToClipboard = useCallback((e)=>{
-                   window.nevigator.clipboard.writeText(password)
-                   e.target.
-     },[password])
 
 
   return (
