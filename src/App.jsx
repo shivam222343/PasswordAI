@@ -1,5 +1,6 @@
 import { useState, useCallback, useEffect, useRef } from 'react'
 import './App.css'
+import {HashRouter} from 'react-router-dom'
 
 function App() {
 const [color, setColor] = useState("blue")
@@ -33,7 +34,7 @@ let passwordGenerator = useCallback(()=>{
 
 
   return (
-    
+    <HashRouter>
        <div className='w-full h-screen duration-200 flex justify-center'
        style={{backgroundColor:color, height:"100vh", width:"100vw"}}>
              <div className='h-40 w-96 rounded-lg mt-5 flex flex-wrap justify-center'style={{backgroundColor:'gray'}}>
@@ -88,6 +89,7 @@ let passwordGenerator = useCallback(()=>{
           </div>
         </div>
        </div>
+      </HashRouter>
   )
 }
 
